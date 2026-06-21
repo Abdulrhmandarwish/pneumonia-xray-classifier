@@ -1,24 +1,61 @@
-# Byte-compiled / optimized files
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
 
-# Environments
+# Python virtual environments
 .env
 .venv/
 venv/
+env/
+ENV/
 
-# IDE
+# IDE files
 .idea/
 .vscode/
 *.swp
+*.swo
+*.swn
+*~
 
-# OS files
+# OS-generated files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
 
-# Jupyter checkpoints
+# Jupyter
 .ipynb_checkpoints/
+*.ipynb_checkpoints
 
-# Don't ignore the model — it's needed for deployment
-# densenet_stage1_v2.keras
+# Streamlit local cache / secrets
+.streamlit/secrets.toml
+
+# Logs
+*.log
+logs/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# Test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Model files larger than GitHub's 100 MB limit should be in Git LFS.
+# The model in this repo (~31 MB) is within the limit and intentionally tracked.
+# Uncomment below if you switch to a larger model:
+# *.keras
+# *.h5
+# *.pb
+
+# Temporary data
+*.tmp
+*.temp
